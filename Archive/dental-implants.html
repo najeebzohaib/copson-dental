@@ -26,61 +26,15 @@
   
   <!-- AOS (Animate on Scroll) CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
-  <!-- CUSTOM BRANDING CSS - DARK HERO THEME -->
-  <style>
-    :root {
-      --bs-primary: #009da6; 
-      --bs-dark: #1a2530; 
-    }
-
-    /* Brand Colors */
-    .text-primary { color: var(--bs-primary) !important; }
-    .bg-primary { background-color: var(--bs-primary) !important; }
-    .btn-primary { background-color: var(--bs-primary); border-color: var(--bs-primary); }
-    .btn-primary:hover { background-color: #00858d; border-color: #00858d; }
-    
-    /* Dark Hero Specifics */
-    .hero-section-dark {
-        background-color: var(--bs-dark);
-        color: white !important;
-    }
-    .hero-section-dark .text-body {
-        color: #e0e0e0 !important;
-    }
-    .hero-section-dark .text-primary {
-        color: #00d2dd !important; /* Lighter teal for better contrast on dark bg */
-    }
-    
-    /* Header floating on top of dark hero */
-    header#header {
-        background-color: var(--bs-dark) !important; 
-        box-shadow: none; 
-    }
-    .navbar-brand, .nav-link { color: white !important; }
-    .nav-link:hover { color: var(--bs-primary) !important; }
-    .nav-link.active { color: var(--bs-primary) !important; }
-
-    /* Navbar Toggler White */
-    .navbar-toggler { border-color: rgba(255,255,255,0.5); }
-    .navbar-toggler-default i, .navbar-toggler-toggled i { color: white !important; }
-
-    /* Footer */
-    footer.bg-dark { background-color: var(--bs-dark) !important; }
-
-    /* Soft Backgrounds (for alerts/sections) */
-    .alert-soft-info {
-      background-color: rgba(0, 157, 166, 0.1);
-      color: var(--bs-primary);
-      border-color: transparent;
-    }
-  </style>
 </head>
 
 <body>
   <!-- ========== HEADER ========== -->
-  <header id="header" class="navbar navbar-expand-lg navbar-dark navbar-end navbar-absolute-top navbar-show-hide"
-          data-hs-header-options='{ "fixMoment": 0, "fixEffect": "slide" }'>
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light navbar-absolute-top navbar-show-hide"
+          data-hs-header-options='{
+            "fixMoment": 0,
+            "fixEffect": "slide"
+          }'>
     <div class="container">
       <nav class="js-mega-menu navbar-nav-wrap">
         <!-- Default Logo -->
@@ -144,11 +98,11 @@
   <main id="content" role="main">
     
     <!-- Hero -->
-    <div class="overflow-hidden hero-section-dark">
-      <div class="container content-space-t-3 content-space-b-2">
+    <div class="overflow-hidden">
+      <div class="container content-space-t-3">
         <div class="row justify-content-lg-between align-items-md-center">
           <div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
-            <h1 class="display-4 mb-3 text-white" data-aos="fade-up">Dental Implants</h1>
+            <h1 class="display-4 mb-3 text-primary" data-aos="fade-up">Dental Implants</h1>
             <p class="fs-3 text-body" data-aos="fade-up" data-aos-delay="100">A reliable, long-lasting, and natural-feeling substitute for missing teeth.</p>
           </div>
           <!-- End Col -->
@@ -271,7 +225,7 @@
               <h5 class="alert-heading"><i class="bi-info-circle-fill me-2"></i>Have Questions?</h5>
               <p>For further information about dental implants and to find out if they are the right solution for you, please ask the dentist.</p>
               <hr>
-              <a class="btn btn-primary btn-sm" href="tel:01614349129">Call 0161 4349129</a>
+              <a class="btn btn-primary btn-sm" href="./contact-us.html">Contact Us Today</a>
             </div>
           </div>
         </div>
@@ -280,6 +234,7 @@
       <!-- End Row -->
 
       <!-- References Section -->
+      <!-- Corrected class attribute and added AOS -->
       <div class="row justify-content-center" data-aos="fade-up">
         <div class="col-lg-10">
           <div class="bg-light p-4 p-md-5 rounded-3 mt-7">
@@ -288,7 +243,7 @@
               <ol class="ps-3 mb-0">
                 <li class="mb-2">Dutta SR, Passi D, Singh P, Atri M, Mohan S, Sharma A. Risks and complications associated with dental implant failure: Critical update. Natl J Maxillofac Surg. 2020 Jan-Jun;11(1):14-19.</li>
                 <li class="mb-2">French D, Ofec R, Levin L. Long term clinical performance of 10 871 dental implants with up to 22 years of follow-up... Clin Implant Dent Relat Res. 2021 Jun;23(3):289-297.</li>
-                <li class="mb-2">Taylor M, Masood M, Mnatzaganian G. Longevity of complete dentures: A systematic review and meta-analysis. J Prosthet Dent. 2021 Apr;125(4):611-619.</li>
+                <li class.mb-2">Taylor M, Masood M, Mnatzaganian G. Longevity of complete dentures: A systematic review and meta-analysis. J Prosthet Dent. 2021 Apr;125(4):611-619.</li>
                 <li class="mb-2">Lin HK, Pan YH, Salamanca E, Lin YT, Chang WJ. Prevention of Bone Resorption by HA/β-TCP + Collagen Composite after Tooth Extraction: A Case Series. Int J Environ Res Public Health. 2019 Nov 21;16(23):4616.</li>
                 <li class="mb-2">Khalifa AK, Wada M, Ikebe K, Maeda Y. To what extent residual alveolar ridge can be preserved by implant? A systematic review. Int J Implant Dent. 2016 Dec;2(1):22.</li>
                 <li class="mb-2">Adler L, Liedholm E, Silvegren M, Modin C, Buhlin K, Jansson L. Patient satisfaction 8-14 years after dental implant therapy - a questionnaire study. Acta Odontol Scand. 2016 Jul;74(5):423-9.</li>
@@ -308,11 +263,11 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-dark text-light">
+  <footer class="bg-dark">
     <div class="container">
       <div class="row align-items-center pt-8 pb-4">
         <div class="col-md mb-5 mb-md-0">
-          <h2 class="fw-bold text-white mb-0">Copson Street<br><span class="text-primary">Dental Practice</span></h2>
+          <h2 class="fw-medium text-white-70 mb-0">Copson Street<br><span class="fw-bold text-white">Dental Practice</span></h2>
         </div>
         <!-- End Col -->
       </div>
@@ -327,7 +282,7 @@
             <ul class="list-unstyled list-py-1 mb-0">
               <li><a class="link link-light link-light-75" href="./index.html">Home</a></li>
               <li><a class="link link-light link-light-75" href="./the-team.html">The Team</a></li>
-              <li><a class="link link-light link-light-75" href="./gallery.html">Gallery</a></li>
+              <li><a class."link link-light link-light-75" href="./gallery.html">Gallery</a></li>
               <li><a class="link link-light link-light-75" href="./contact-us.html">Contact Us</a></li>
             </ul>
             <!-- End List -->
@@ -353,8 +308,9 @@
 
             <!-- List -->
             <ul class="list-unstyled list-py-1 mb-0">
-              <li><a class="link link-light link-light-75" target="_blank" href="http://maps.google.com/?q=M20 3HE"><i class="bi-geo-alt-fill me-2 text-primary"></i> Copson Street Dental Practice, 2A Copson Street, Withington, Manchester, M20 3HE</a></li>
-              <li><a class="link link-light link-light-75" href="tel:01614349129"><i class="bi-telephone-fill me-2 text-primary"></i> 0161 4349129</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-geo-alt-fill me-2"></i> Copson Street Dental Practice, 2A Copson Street, Withington, Manchester, M20 3HE</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-telephone-fill me-2"></i> 0161 4349129</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-envelope-fill me-2"></i> info@copsondental.co.uk </a></li>
             </ul>
             <!-- End List -->
           </div>
@@ -412,7 +368,7 @@
 
 
       // INITIALIZATION OF MEGA MENU
-      // =======================================================
+      // =S=====================================================
       const megaMenu = new HSMegaMenu('.js-mega-menu', {
         desktop: {
           position: 'left'

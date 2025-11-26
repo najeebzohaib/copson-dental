@@ -23,62 +23,15 @@
 
   <!-- CSS Unify Template -->
   <link rel="stylesheet" href="./assets/css/theme.min.css">
-
-  <!-- AOS (Animate on Scroll) CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
-  <!-- CUSTOM BRANDING CSS - DARK HERO THEME -->
-  <style>
-    :root {
-      --bs-primary: #009da6; 
-      --bs-dark: #1a2530; 
-    }
-
-    /* Brand Colors */
-    .text-primary { color: var(--bs-primary) !important; }
-    .bg-primary { background-color: var(--bs-primary) !important; }
-    .btn-primary { background-color: var(--bs-primary); border-color: var(--bs-primary); }
-    .btn-primary:hover { background-color: #00858d; border-color: #00858d; }
-    
-    /* Dark Hero Specifics */
-    .hero-section-dark {
-        background-color: var(--bs-dark);
-        color: white !important;
-    }
-    .hero-section-dark .text-body {
-        color: #e0e0e0 !important;
-    }
-    .hero-section-dark .text-primary {
-        color: #00d2dd !important; /* Lighter teal for better contrast on dark bg */
-    }
-    
-    /* Header floating on top of dark hero */
-    header#header {
-        background-color: var(--bs-dark) !important; 
-        box-shadow: none; 
-    }
-    .navbar-brand, .nav-link { color: white !important; }
-    .nav-link:hover { color: var(--bs-primary) !important; }
-    .nav-link.active { color: var(--bs-primary) !important; }
-
-    /* Navbar Toggler White */
-    .navbar-toggler { border-color: rgba(255,255,255,0.5); }
-    .navbar-toggler-default i, .navbar-toggler-toggled i { color: white !important; }
-
-    /* Footer */
-    footer.bg-dark { background-color: var(--bs-dark) !important; }
-
-    /* Soft Backgrounds */
-    .bg-light {
-        background-color: #f9fafb !important;
-    }
-  </style>
 </head>
 
 <body>
   <!-- ========== HEADER ========== -->
-  <header id="header" class="navbar navbar-expand-lg navbar-dark navbar-end navbar-absolute-top navbar-show-hide"
-          data-hs-header-options='{ "fixMoment": 0, "fixEffect": "slide" }'>
+  <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light navbar-absolute-top navbar-show-hide"
+          data-hs-header-options='{
+            "fixMoment": 0,
+            "fixEffect": "slide"
+          }'>
     <div class="container">
       <nav class="js-mega-menu navbar-nav-wrap">
         <!-- Default Logo -->
@@ -142,15 +95,15 @@
   <main id="content" role="main">
     
     <!-- Hero -->
-    <div class="overflow-hidden hero-section-dark">
-      <div class="container content-space-t-3 content-space-b-2">
+    <div class="overflow-hidden">
+      <div class="container content-space-t-3">
         <div class="row justify-content-lg-between align-items-md-center">
           <div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
-            <h1 class="display-4 mb-3 text-white" data-aos="fade-up">Treatments <span class="text-primary">& Prices</span></h1>
-            <p class="fs-3 text-body" data-aos="fade-up" data-aos-delay="100">High-quality, affordable dental care. Explore our private, plan, and NHS prices.</p>
+            <h1 class="display-4 mb-3">Treatments <span class="text-primary">& Prices</span></h1>
+            <p class="fs-3 text-body">High-quality, affordable dental care. Explore our private, plan, and NHS prices.</p>
           </div>
           <!-- End Col -->
-          <div class="col-md-6 d-none d-md-block" data-aos="fade-in" data-aos-duration="1000">
+          <div class="col-md-6 d-none d-md-block">
             <img class="img-fluid rounded-3 shadow-lg" src="./assets/img/treatments.jpg" alt="Modern Dental Treatment Room">
           </div>
           <!-- End Col -->
@@ -164,14 +117,14 @@
     <div class="container content-space-2 content-space-lg-3">
       
       <!-- Heading -->
-      <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10" data-aos="fade-up">
+      <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10">
         <h2>Private & Practice Plan Prices</h2>
         <p class="fs-5 text-body">Click on a category to see our detailed pricing. Practice Plan members receive a 20% discount on most private treatments.</p>
       </div>
       <!-- End Heading -->
 
       <!-- Accordion -->
-      <div class="accordion" id="priceListAccordion" data-aos="fade-up" data-aos-delay="100">
+      <div class="accordion" id="priceListAccordion">
 
         <!-- Accordion Item 1: Examinations & Hygiene -->
         <div class="accordion-item">
@@ -507,7 +460,7 @@
     <div class="bg-light">
       <div class="container content-space-2 content-space-lg-3">
         <!-- Heading -->
-        <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10" data-aos="fade-up">
+        <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10">
           <h2>NHS Treatment</h2>
           <p class="fs-5 text-body">There are 4 NHS charge bands:</p>
         </div>
@@ -515,8 +468,8 @@
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <!-- Band 1 -->
-          <div class="col" data-aos="fade-up" data-aos-delay="100">
-            <div class="card h-100 shadow-sm text-center p-4 border-0">
+          <div class="col">
+            <div class="card h-100 shadow-sm text-center p-4">
               <div class="card-body">
                 <div class="fs-1 text-primary mb-3">
                   <i class="fa-solid fa-clipboard-check"></i>
@@ -530,8 +483,8 @@
           <!-- End Col -->
 
           <!-- Band 2 -->
-          <div class="col" data-aos="fade-up" data-aos-delay="200">
-            <div class="card h-100 shadow-sm text-center p-4 border-0">
+          <div class="col">
+            <div class="card h-100 shadow-sm text-center p-4">
               <div class="card-body">
                 <div class="fs-1 text-primary mb-3">
                   <i class="fa-solid fa-clipboard-list"></i>
@@ -545,8 +498,8 @@
           <!-- End Col -->
 
           <!-- Band 3 -->
-          <div class="col" data-aos="fade-up" data-aos-delay="300">
-            <div class="card h-100 shadow-sm text-center p-4 border-0">
+          <div class="col">
+            <div class="card h-100 shadow-sm text-center p-4">
               <div class="card-body">
                 <div class="fs-1 text-primary mb-3">
                   <i class="fa-solid fa-notes-medical"></i>
@@ -560,8 +513,8 @@
           <!-- End Col -->
 
           <!-- Urgent -->
-          <div class="col" data-aos="fade-up" data-aos-delay="400">
-            <div class="card h-100 shadow-sm text-center p-4 border-0">
+          <div class="col">
+            <div class="card h-100 shadow-sm text-center p-4">
               <div class="card-body">
                 <div class="fs-1 text-primary mb-3">
                   <i class="fa-solid fa-triangle-exclamation"></i>
@@ -583,11 +536,11 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-dark text-light">
+  <footer class="bg-dark">
     <div class="container">
       <div class="row align-items-center pt-8 pb-4">
         <div class="col-md mb-5 mb-md-0">
-          <h2 class="fw-bold text-white mb-0">Copson Street<br><span class="text-primary">Dental Practice</span></h2>
+          <h2 class="fw-medium text-white-70 mb-0">Copson Street<br><span class="fw-bold text-white">Dental Practice</span></h2>
         </div>
         <!-- End Col -->
       </div>
@@ -628,8 +581,9 @@
 
             <!-- List -->
             <ul class="list-unstyled list-py-1 mb-0">
-              <li><a class="link link-light link-light-75" target="_blank" href="http://maps.google.com/?q=M20 3HE"><i class="bi-geo-alt-fill me-2 text-primary"></i> Copson Street Dental Practice, 2A Copson Street, Withington, Manchester, M20 3HE</a></li>
-              <li><a class="link link-light link-light-75"  href="tel:01614349129"><i class="bi-telephone-fill me-2 text-primary"></i> 0161 4349129</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-geo-alt-fill me-2"></i> Copson Street Dental Practice, 2A Copson Street, Withington, Manchester, M20 3HE</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-telephone-fill me-2"></i> 0161 4349129</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-envelope-fill me-2"></i> info@copsondental.co.uk </a></li>
             </ul>
             <!-- End List -->
           </div>
@@ -671,12 +625,6 @@
   <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
   <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
   <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
-  
-  <!-- AOS (Animate on Scroll) JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  
-  <!-- GLightbox JS -->
-  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
   <!-- JS Unify -->
   <script src="./assets/js/theme.min.js"></script>
@@ -730,23 +678,6 @@
             preloader.parentNode.removeChild(preloader)
           }
         }
-      });
-      
-      // INITIALIZATION OF AOS (ANIMATE ON SCROLL)
-      // =======================================================
-      AOS.init({
-        duration: 800, // values from 0 to 3000, with step 50ms
-        once: true,    // whether animation should happen only once - while scrolling down
-      });
-      
-      // INITIALIZATION OF GLIGHTBOX
-      // =======================================================
-      const lightbox = GLightbox({
-        selector: '.gallery-lightbox', 
-        touchNavigation: true,
-        loop: true,
-        openEffect: 'zoom',
-        closeEffect: 'fade'
       });
     })()
   </script>

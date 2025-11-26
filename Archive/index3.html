@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Home | Copson Street Dental Practice</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- CUSTOM BRANDING CSS - VARIATION 1 (Bold Header) -->
+  <style>
+    :root {
+      /* Brand Teal */
+      --bs-primary: #009da6; 
+      --bs-primary-rgb: 0, 157, 166;
+      /* Brand Navy (Darker) */
+      --bs-dark: #1a2530; 
+      --bs-dark-rgb: 26, 37, 48;
+    }
+
+    /* Primary Color Overrides */
+    .text-primary { color: var(--bs-primary) !important; }
+    .bg-primary { background-color: var(--bs-primary) !important; }
+    .btn-primary { 
+      background-color: var(--bs-primary); 
+      border-color: var(--bs-primary); 
+    }
+    .btn-primary:hover { 
+      background-color: #00858d; 
+      border-color: #00858d; 
+    }
+    .btn-outline-primary {
+      color: var(--bs-primary);
+      border-color: var(--bs-primary);
+    }
+    .btn-outline-primary:hover {
+      background-color: var(--bs-primary);
+      border-color: var(--bs-primary);
+    }
+
+    /* HEADER STYLING - DARK MODE */
+    header#header {
+        background-color: var(--bs-dark) !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .navbar-brand, .nav-link {
+        color: #ffffff !important; /* White text */
+        opacity: 0.9;
+    }
+    .nav-link:hover {
+        opacity: 1;
+        color: var(--bs-primary) !important;
+    }
+    .nav-link.active {
+        color: var(--bs-primary) !important;
+        font-weight: 600;
+        opacity: 1;
+    }
+    /* Hamburger menu color fix for dark background */
+    .navbar-toggler {
+        border-color: rgba(255,255,255,0.5);
+    }
+    .navbar-toggler-default i, .navbar-toggler-toggled i {
+        color: white !important;
+    }
+
+    /* Soft Backgrounds */
+    .bg-soft-primary {
+      background-color: rgba(0, 157, 166, 0.08) !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  <!-- Added navbar-dark to help Bootstrap handle text colors -->
+  <header id="header" class="navbar navbar-expand-lg navbar-dark navbar-end navbar-absolute-top navbar-show-hide"
+          data-hs-header-options='{
+            "fixMoment": 0,
+            "fixEffect": "slide"
+          }'>
+    <div class="container">
+      <nav class="js-mega-menu navbar-nav-wrap">
+        <!-- Default Logo -->
+        <a class="navbar-brand" href="./index.html" aria-label="Copson Street Dental Practice">
+           <!-- Ideally you use a white version of the logo here, but standard works if it has light text -->
+          <img class="navbar-brand-logo" src="./assets/img/copson-logo.png" alt="Copson Street Dental Logo" style="filter: brightness(0) invert(1);"> 
+          <!-- Added CSS filter to force white logo for this specific variation, remove style attribute if you have a proper white PNG -->
+        </a>
+        <!-- End Default Logo -->
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </button>
+        <!-- End Toggler -->
+      
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-absolute-top-scroller">
+            <!-- Navigation Menu -->
+            <ul class="navbar-nav nav-pills ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./the-team.html">The Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./treatments.html">Treatments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./dental-implants.html">Dental Implants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./teeth-whitening.html">Teeth Whitening</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./stain-removal.html">Stain Removal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+            <!-- End Navigation Menu -->
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Hero -->
+    <div class="overflow-hidden bg-soft-primary">
+      <div class="container content-space-t-3 content-space-b-2">
+        <div class="row justify-content-lg-between align-items-md-center">
+          <div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
+            <h1 class="display-4 mb-5" data-aos="fade-up">Welcome to <span class="text-primary">Copson Street Dental</span> Practice</h1>
+             <span class="text-cap text-primary fw-bold mb-2" data-aos="fade-up" data-aos-delay="100">Dentist in Withington, Manchester</span>
+            <p class="fs-5 text-body" data-aos="fade-up" data-aos-delay="200">Copson Street Dental is a family-focused mixed dental practice providing both NHS and private dental treatment. It’s located in Withington, a suburb of South Manchester.</p>
+            <p class="text-body" data-aos="fade-up" data-aos-delay="300">We strive to be a caring practice providing high-quality treatments to our patients. We have an excellent team of dentists, dental nurses, and reception staff who all have a genuine concern for our patient’s best interest and wellbeing.</p>
+            <div class="mt-5" data-aos="fade-up" data-aos-delay="400">
+                <a class="btn btn-primary btn-lg me-3" href="./contact-us.html">Book Appointment</a>
+                <a class="btn btn-outline-primary btn-lg" href="./treatments.html">View Treatments</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 d-none d-md-block" data-aos="fade-in" data-aos-duration="1000">
+            <div class="row gx-3 me-lg-n10">
+              <div class="col-3 offset-1 align-self-end mb-3">
+                <img class="img-fluid" src="./assets/svg/components/dots-success.svg" alt="Decorative Dots">
+              </div>
+              <div class="col-8 mb-3">
+                <img class="img-fluid rounded-3 shadow-lg" src="./assets/img/dental/homepage1.jpg" alt="Dental Practice Interior">
+              </div>
+              <div class="col-6">
+                <img class="img-fluid rounded-3 shadow-lg" src="./assets/img/dental/homepage2.jpg" alt="Friendly Dentist">
+              </div>
+              <div class="col-5">
+                 <div class="bg-white rounded-3 shadow-lg p-4 d-flex align-items-center justify-content-center h-100">
+                    <i class="fa-solid fa-tooth fs-1 text-primary"></i>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero -->
+
+  <!-- Features -->
+    <div class="overflow-hidden content-space-2">
+      <div class="container" data-aos="fade-up">
+        <div class="bg-dark rounded-3 p-4 p-sm-8 p-lg-10 mx-md-n7 mx-lg-n10">
+          <div class="row align-items-lg-center">
+            <div class="col-lg-7 order-lg-2 mb-5 mb-lg-0">
+              <div class="position-relative">
+                <div class="w-75 ms-auto">
+                  <img class="img-fluid rounded-3" src="./assets/img/500x650/img4.jpg" alt="Image Description">
+                </div>
+                <div class="position-absolute bottom-0 start-0 mb-10 ms-5">
+                  <img class="img-fluid w-75 shadow rounded-3" src="./assets/img/dental/homepage3.jpg" alt="Image Description">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="pe-lg-5">
+                <div class="mb-5">
+                  <h2 class="text-white">Excellence in Dental Care</h2>
+                  <p class="text-white-70">We will always take the time to discuss your treatment and answer any concerns ensuring the patient is confident and relaxed allowing us to provide quality dental care.</p>
+                </div>
+                <ul class="list-checked list-checked-soft-bg-primary list-checked-lg mb-5">
+                  <li class="list-checked-item text-white-70">We prioritize patient comfort</li>
+                  <li class="list-checked-item text-white-70">New patients are welcome on an independent or Practice Plan basis</li>
+                  <li class="list-checked-item text-white-70">We offer a complete range of dental treatments</li>
+                </ul>
+                <a class="btn btn-primary btn-pointer" href="./contact-us.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Features -->
+
+    <!-- Opening Times & Pricing Table -->
+    <div class="bg-light">
+        <div class="container content-space-2 content-space-lg-3">
+          <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10" data-aos="fade-up">
+              <h2>Opening Times</h2>
+            </div>
+          <div class="table-responsive-sm bg-white shadow-sm rounded-3 p-4" data-aos="fade-up" data-aos-delay="100">
+            <table class="table table-lg table-striped table-borderless mb-0">
+              <thead>
+                <tr class="table-align-middle">
+                  <th scope="col"></th>
+                  <th scope="col" class="table-text-center h5 text-primary">Morning</th>
+                  <th scope="col" class="table-text-center h5 text-primary">Afternoon</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Monday</th>
+                  <td class="table-text-center">9am – 1pm</td>
+                  <td class="table-text-center">2pm – 6pm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tuesday</th>
+                  <td class="table-text-center">9am – 1pm</td>
+                  <td class="table-text-center">2pm – 6pm</td>
+                </tr>
+                 <tr>
+                  <th scope="row">Wednesday</th>
+                  <td class="table-text-center">9am – 1pm</td>
+                  <td class="table-text-center">2pm – 6pm</td>
+                </tr>
+                  <tr>
+                  <th scope="row">Thursday</th>
+                  <td class="table-text-center">9am – 1pm</td>
+                  <td class="table-text-center">2pm – 6pm</td>
+                </tr>
+                <tr>
+                  <th scope="row">Friday</th>
+                  <td class="table-text-center">9am – 1pm</td>
+                  <td class="table-text-center">2pm – 6pm</td>
+                </tr>
+                 <tr>
+                  <th scope="row">Saturday</th>
+                  <td class="table-text-center">10:30am – 2pm</td>
+                  <td class="table-text-center">Closed</td>
+                </tr>
+                <tr>
+                  <th scope="row">Sunday</th>
+                  <td class="table-text-center">Closed</td>
+                  <td class="table-text-center">Closed</td>
+                </tr>
+                 <tr>
+                  <th scope="row">Bank Holidays</th>
+                  <td class="table-text-center">Closed</td>
+                  <td class="table-text-center">Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Disability Access -->
+    <div class="container content-space-2 content-space-lg-3">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-8">
+            <div class="alert alert-soft-warning text-center shadow-sm" role="alert">
+              <h4 class="alert-heading text-dark"><i class="bi-exclamation-triangle-fill me-2 text-warning"></i>Disability Access</h4>
+              <p class="mb-0 fs-5">Please note: There is no wheelchair access to the dental practice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center pt-8 pb-4">
+        <div class="col-md mb-5 mb-md-0">
+          <h2 class="fw-bold text-white mb-0">Copson Street<br><span class="text-primary">Dental Practice</span></h2>
+        </div>
+      </div>
+      <div class="border-bottom border-white-10">
+        <div class="row py-6">
+          <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-lg-0">
+            <span class="text-cap text-white">Quick Links</span>
+            <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link link-light link-light-75" href="./index.html">Home</a></li>
+              <li><a class="link link-light link-light-75" href="./the-team.html">The Team</a></li>
+              <li><a class="link link-light link-light-75" href="./gallery.html">Gallery</a></li>
+              <li><a class="link link-light link-light-75" href="./contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-lg-0">
+            <span class="text-cap text-white">Treatments</span>
+            <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link link-light link-light-75" href="./dental-implants.html">Dental Implants</a></li>
+              <li><a class="link link-light link-light-75" href="./teeth-whitening.html">Teeth Whitening</a></li>
+              <li><a class="link link-light link-light-75" href="./stain-removal.html">Stain Removal</a></li>
+              <li><a class="link link-light link-light-75" href="./treatments.html">Price List</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-sm-0">
+            <span class="text-cap text-white">Contact</span>
+            <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-geo-alt-fill me-2 text-primary"></i> Copson Street Dental Practice, 2A Copson Street, Withington, Manchester, M20 3HE</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-telephone-fill me-2 text-primary"></i> 0161 4349129</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-envelope-fill me-2 text-primary"></i> info@copsondental.co.uk </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Global Compulsory  -->
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+    (function() {
+      new HSHeader('#header').init()
+      const megaMenu = new HSMegaMenu('.js-mega-menu', { desktop: { position: 'left' } })
+      new HSGoTo('.js-go-to')
+      AOS.init({ duration: 800, once: true });
+      var yearElem = document.getElementById('current-year');
+      if(yearElem) yearElem.textContent = new Date().getFullYear();
+    })()
+  </script>
+</body>
+</html>
