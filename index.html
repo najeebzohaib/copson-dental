@@ -62,6 +62,14 @@
 
     /* Footer */
     footer.bg-dark { background-color: var(--bs-dark) !important; }
+         /* Navbar Tweaks for Space (Fixes alignment issue) */
+    .navbar-nav .nav-link {
+        font-size: 0.85rem !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    
+
   </style>
 </head>
 
@@ -79,20 +87,28 @@
           <span class="navbar-toggler-default"><i class="bi-list"></i></span>
           <span class="navbar-toggler-toggled"><i class="bi-x"></i></span>
         </button>
+
+             <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <div class="navbar-absolute-top-scroller">
+            <!-- Navigation Menu -->
             <ul class="navbar-nav nav-pills ms-auto">
-              <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="./index.html"  aria-current="page">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="./the-team.html">The Team</a></li>
+             
               <li class="nav-item"><a class="nav-link" href="./treatments.html">Treatments</a></li>
-              <li class="nav-item"><a class="nav-link" href="./dental-implants.html">Dental Implants</a></li>
+              <li class="nav-item"><a class="nav-link" href="./dental-implants.html" >Dental Implants</a></li>
               <li class="nav-item"><a class="nav-link" href="./teeth-whitening.html">Teeth Whitening</a></li>
+               <li class="nav-item"><a class="nav-link" href="./teeth-straightening.html" >Teeth Straightening</a></li>
               <li class="nav-item"><a class="nav-link" href="./stain-removal.html">Stain Removal</a></li>
               <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
               <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact Us</a></li>
             </ul>
+            <!-- End Navigation Menu -->
           </div>
         </div>
+        <!-- End Collapse -->
+
       </nav>
     </div>
   </header>
@@ -112,7 +128,7 @@
             <p class="fs-5 text-body" data-aos="fade-up" data-aos-delay="200">Copson Street Dental is a family-focused mixed dental practice providing both NHS and private dental treatment.</p>
             <p class="text-body" data-aos="fade-up" data-aos-delay="300">We strive to be a caring practice providing high-quality treatments to our patients. We have an excellent team of dentists, dental nurses, and reception staff.</p>
             <div class="mt-5" data-aos="fade-up" data-aos-delay="400">
-                <a class="btn btn-primary btn-lg me-3" href="./contact-us.html">Book Appointment</a>
+                <a class="btn btn-primary btn-lg me-3" href="./contact-us.html">Register Interest</a>
                 <a class="btn btn-outline-light btn-lg" href="./treatments.html">View Treatments</a>
             </div>
           </div>
@@ -167,7 +183,7 @@
                   <li class="list-checked-item text-dark">New patients are welcome</li>
                   <li class="list-checked-item text-dark">Complete range of treatments</li>
                 </ul>
-                <a class="btn btn-primary btn-pointer" href="./contact-us.html">Contact Us</a>
+                <a class="btn btn-primary btn-pointer" href="./contact-us.html">Register Interest</a>
               </div>
             </div>
           </div>

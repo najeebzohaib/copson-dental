@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Teeth Straightening | Copson Street Dental Practice</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css">
+
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- CUSTOM BRANDING CSS - DARK HERO THEME -->
+  <style>
+    :root {
+      --bs-primary: #009da6; 
+      --bs-dark: #1a2530; 
+    }
+
+    /* Brand Colors */
+    .text-primary { color: var(--bs-primary) !important; }
+    .bg-primary { background-color: var(--bs-primary) !important; }
+    .btn-primary { background-color: var(--bs-primary); border-color: var(--bs-primary); }
+    .btn-primary:hover { background-color: #00858d; border-color: #00858d; }
+    
+    /* Dark Hero Specifics */
+    .hero-section-dark {
+        background-color: var(--bs-dark);
+        color: white !important;
+    }
+    .hero-section-dark .text-body {
+        color: #e0e0e0 !important;
+    }
+    .hero-section-dark .text-primary {
+        color: #00d2dd !important; /* Lighter teal for better contrast on dark bg */
+    }
+    
+    /* Header floating on top of dark hero */
+    header#header {
+        background-color: var(--bs-dark) !important; 
+        box-shadow: none; 
+    }
+    .navbar-brand, .nav-link { color: white !important; }
+    .nav-link:hover { color: var(--bs-primary) !important; }
+    .nav-link.active { color: var(--bs-primary) !important; }
+
+    /* Navbar Toggler White */
+    .navbar-toggler { border-color: rgba(255,255,255,0.5); }
+    .navbar-toggler-default i, .navbar-toggler-toggled i { color: white !important; }
+
+    /* Footer */
+    footer.bg-dark { background-color: var(--bs-dark) !important; }
+
+    /* Soft Backgrounds */
+    .alert-soft-info {
+      background-color: rgba(0, 157, 166, 0.1);
+      color: var(--bs-primary);
+      border-color: transparent;
+    }
+    .bg-soft-primary {
+        background-color: rgba(0, 157, 166, 0.05) !important;
+    }
+
+    /* Navbar Tweaks for Space (Fixes alignment issue) */
+    .navbar-nav .nav-link {
+        font-size: 0.85rem !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    
+    /* Treatable Cases Image Fix */
+    .case-img {
+        height: 120px; /* Fixed height for consistency */
+        width: 100%;
+        object-fit: contain; /* Ensure image fits without cropping */
+        margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand-lg navbar-dark navbar-end navbar-absolute-top navbar-show-hide"
+          data-hs-header-options='{ "fixMoment": 0, "fixEffect": "slide" }'>
+    <div class="container">
+      <nav class="js-mega-menu navbar-nav-wrap">
+        <!-- Default Logo -->
+        <a class="navbar-brand" href="./index.html" aria-label="Copson Street Dental Practice">
+          <img class="navbar-brand-logo" src="./assets/img/copson-logo.png" alt="Copson Street Dental Logo">
+        </a>
+        <!-- End Default Logo -->
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </button>
+        <!-- End Toggler -->
+      
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-absolute-top-scroller">
+            <!-- Navigation Menu -->
+            <ul class="navbar-nav nav-pills ms-auto">
+              <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="./the-team.html">The Team</a></li>
+             
+              <li class="nav-item"><a class="nav-link" href="./treatments.html">Treatments</a></li>
+              <li class="nav-item"><a class="nav-link" href="./dental-implants.html">Dental Implants</a></li>
+              <li class="nav-item"><a class="nav-link" href="./teeth-whitening.html">Teeth Whitening</a></li>
+               <li class="nav-item"><a class="nav-link active" href="./teeth-straightening.html" aria-current="page">Teeth Straightening</a></li>
+              <li class="nav-item"><a class="nav-link" href="./stain-removal.html">Stain Removal</a></li>
+              <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact Us</a></li>
+            </ul>
+            <!-- End Navigation Menu -->
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    
+    <!-- Hero -->
+    <div class="overflow-hidden hero-section-dark">
+      <div class="container content-space-t-3 content-space-b-2">
+        <div class="row justify-content-lg-between align-items-md-center">
+          <div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
+            <h1 class="display-4 mb-3 text-white" data-aos="fade-up">Teeth Straightening with <span class="text-primary">SwiftFlex</span></h1>
+            <p class="fs-3 text-body" data-aos="fade-up" data-aos-delay="100">Perfecting Smiles, Swiftly Shaping Futures.</p>
+            <p class="text-white-70 mt-3" data-aos="fade-up" data-aos-delay="200">Our virtually invisible, custom-made aligners discreetly straighten your teeth, allowing you to maintain your lifestyle with confidence.</p>
+          </div>
+          <!-- End Col -->
+          <div class="col-md-6 d-none d-md-block" data-aos="fade-in" data-aos-duration="1000">
+            <!-- Placeholder for a teeth straightening image -->
+            <img class="img-fluid rounded-3 shadow-lg" src="./assets/img/dental/swiftflex-logo.png" alt="SwiftFlex Clear Aligners">
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- About Section -->
+    <div class="container content-space-2 content-space-lg-3">
+        <div class="row justify-content-lg-between align-items-lg-center">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                 <!-- Using a placeholder as image generation was not possible -->
+                 <img class="img-fluid rounded-3" src="./assets/img/dental/swiftflex-before-after.png" alt="Patient Smiling">
+            </div>
+            <div class="col-lg-5" data-aos="fade-left">
+                <div class="mb-5">
+                    <h2>About SwiftFlex</h2>
+                    <p>At SwiftFlex, your smile is our priority. We believe everyone deserves a beautiful smile without sacrificing comfort or confidence.</p>
+                    <p>Our virtually invisible, custom-made aligners discreetly straighten your teeth, allowing you to maintain your lifestyle. Enjoy the freedom to eat, drink, and maintain oral hygiene with ease, knowing our aligners blend seamlessly with your natural teeth.</p>
+                    <p>We prioritise care and focus on making you smile every day. Our advanced technology ensures smooth and efficient treatment, while innovative materials minimise discomfort.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Treatable Cases Grid -->
+    <div class="bg-soft-primary">
+        <div class="container content-space-2">
+            <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7" data-aos="fade-up">
+                <h2>Treatable Cases</h2>
+                <p>SwiftFlex Aligners can be used to treat a wide range of orthodontic issues.</p>
+            </div>
+            
+            <!-- Changed to row-cols-md-3 to show 3 in a row on medium screens and up -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center justify-content-center">
+                <!-- Item -->
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                             <!-- Use the 'case-img' class for consistent sizing -->
+                            <img class="case-img mb-3" src="./assets/img/dental/swiftflex-crowded.png" alt="Crowded Teeth">
+                            <h5 class="card-title">Crowded Teeth</h5>
+                            <p class="card-text small">Too little room for teeth.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <img class="case-img mb-3" src="./assets/img/dental/swiftflex-gap.png" alt="Gap Teeth">
+                            <h5 class="card-title">Gap Teeth</h5>
+                            <p class="card-text small">Too much room for teeth.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <img class="case-img mb-3" src="./assets/img/dental/swiftflex-overbite.png" alt="Overbite">
+                            <h5 class="card-title">Overbite</h5>
+                            <p class="card-text small">Front teeth stick out.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col" data-aos="fade-up" data-aos-delay="250">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <img class="case-img mb-3" src="./assets/img/dental/swiftflex-underbite.png" alt="Underbite">
+                            <h5 class="card-title">Underbite</h5>
+                            <p class="card-text small">Lower jaw sticks out forward.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <img class="case-img mb-3" src="./assets/img/dental/swiftflex-crossbite.png" alt="Crossbite">
+                            <h5 class="card-title">Crossbite</h5>
+                            <p class="card-text small">Upper teeth fit inside lower teeth.</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Item -->
+                 <div class="col" data-aos="fade-up" data-aos-delay="350">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                           <img class="case-img mb-3" src="./assets/img/dental/swiftflex-open.png" alt="Open Bite">
+                            <h5 class="card-title">Open Bite</h5>
+                            <p class="card-text small">Gap between teeth when biting down.</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Item -->
+                 <div class="col" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="card-body d-flex flex-column align-items-center">
+                           <!-- Placeholder - Use uploaded image if available -->
+                            <img class="case-img mb-3" src="./assets/img/dental/swiftflex-crooked.png" alt="Crooked Teeth">
+                            <h5 class="card-title">Crooked Teeth</h5>
+                            <p class="card-text small">Teeth are crooked or misaligned.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works & Included -->
+    <div class="container content-space-2 content-space-lg-3">
+        <div class="row">
+            <!-- How It Works -->
+            <div class="col-lg-6 mb-7 mb-lg-0" data-aos="fade-right">
+                <h3 class="mb-4">How Does SwiftFlex Work?</h3>
+                <ul class="list-unstyled step-list">
+                    <li class="mb-4">
+                        <h5 class="text-primary">1. Initial Assessment</h5>
+                        <p>Your SwiftFlex-trained dentist will take photos, X-rays and digital scans to create your treatment plan.</p>
+                    </li>
+                    <li class="mb-4">
+                        <h5 class="text-primary">2. Customised Treatment Plan</h5>
+                        <p>SwiftFlex uses these records to develop a customised 3D treatment plan, showing your expected results and treatment duration.</p>
+                    </li>
+                    <li class="mb-4">
+                        <h5 class="text-primary">3. Production of Aligners</h5>
+                        <p>Custom aligners are produced and sent to your dentist.</p>
+                    </li>
+                    <li class="mb-4">
+                        <h5 class="text-primary">4. Receiving Aligners</h5>
+                        <p>The dentist will decide how many aligners you will receive at a time. You will wear each set daily and change to a new set every 1-2 weeks.</p>
+                    </li>
+                     <li class="mb-4">
+                        <h5 class="text-primary">5. Regular Check-ups</h5>
+                        <p>Your dentist will advise on the schedule and determine regular visits to monitor your progress.</p>
+                    </li>
+                     <li class="mb-4">
+                        <h5 class="text-primary">6. Post-Treatment Care</h5>
+                        <p>After treatment, retainers may be needed to maintain your new smile.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- What's Included -->
+            <div class="col-lg-5 offset-lg-1" data-aos="fade-left">
+                <div class="card bg-dark text-white p-4">
+                    <h3 class="text-white mb-4">What's Included?</h3>
+                    <ul class="list-checked list-checked-primary">
+                        <li class="list-checked-item text-white-70 mb-2"><strong>Clear Aligners:</strong> Custom-made, virtually invisible aligners.</li>
+                        <li class="list-checked-item text-white-70 mb-2"><strong>Aligner Case:</strong> A secure case for safe storage.</li>
+                        <li class="list-checked-item text-white-70 mb-2"><strong>Chewies:</strong> Bite on these to help insert aligners.</li>
+                        <li class="list-checked-item text-white-70 mb-2"><strong>Patient Aligner File:</strong> Smooths aligner edges.</li>
+                        <li class="list-checked-item text-white-70 mb-2"><strong>Retainers:</strong> Custom-made to maintain your new smile.</li>
+                        <li class="list-checked-item text-white-70 mb-2"><strong>Aftercare Instructions:</strong> Clear guidelines for care.</li>
+                        <li class="list-checked-item text-white-70 mb-2"><strong>Refinements:</strong> Two opportunities to perfect your smile, at no extra cost.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Testimonial -->
+    <div class="bg-light">
+        <div class="container content-space-2">
+            <div class="text-center w-lg-75 mx-auto" data-aos="fade-up">
+                <figure class="mb-4">
+                  <blockquote class="blockquote">
+                    "I have just completed my treatment with SwiftFlex, I am so happy with how the results turned out. I was so unhappy with myself due to how my teeth looked... SwiftFlex has helped me get my confidence back. I cant wait for my wedding pictures, 1 month to go!"
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">
+                    Natalie Murphy, 31, Reading
+                  </figcaption>
+                </figure>
+                <div class="mb-4">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQs Accordion -->
+    <div class="container content-space-2 content-space-lg-3">
+        <div class="w-lg-65 text-center mx-lg-auto mb-5" data-aos="fade-up">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        
+        <div class="w-lg-75 mx-lg-auto" data-aos="fade-up" data-aos-delay="100">
+             <div class="accordion" id="faqAccordion">
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                  <div class="accordion-header" id="headingOne">
+                    <a class="accordion-button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What are clear aligners?
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Clear aligners are transparent, custom-made plastic trays designed to straighten teeth without traditional metal braces.
+                    </div>
+                  </div>
+                </div>
+                
+                 <!-- Item 2 -->
+                <div class="accordion-item">
+                  <div class="accordion-header" id="headingTwo">
+                    <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How do clear aligners work?
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Aligners gradually shift teeth into their desired position by applying gentle, consistent pressure. They are replaced every 1-2 weeks with a new set to continue the process.
+                    </div>
+                  </div>
+                </div>
+                
+                 <!-- Item 3 -->
+                <div class="accordion-item">
+                  <div class="accordion-header" id="headingThree">
+                    <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How long does the treatment take?
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Treatment duration typically ranges from 6 to 18 months, depending on individual cases.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                 <div class="accordion-item">
+                  <div class="accordion-header" id="headingFour">
+                    <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Can I eat and drink with my aligners on?
+                    </a>
+                  </div>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      No, aligners should be removed before eating or drinking anything other than water to prevent staining and damage.
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Item 5 -->
+                 <div class="accordion-item">
+                  <div class="accordion-header" id="headingFive">
+                    <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Are aligners painful?
+                    </a>
+                  </div>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Aligners are generally more comfortable than traditional braces, though some initial discomfort may occur when starting a new set. SwiftFlex's material selection significantly reduces this discomfort.
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CTA -->
+    <div class="container content-space-b-2">
+         <div class="alert alert-soft-info text-center py-5" role="alert" data-aos="fade-up">
+            <h3 class="alert-heading">Ready for your new smile?</h3>
+            <p class="fs-4">Ask us about SwiftFlex aligners today.</p>
+            <a class="btn btn-primary btn-sm" href="tel:01614349129">Call 0161 4349129</a>
+         </div>
+    </div>
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center pt-8 pb-4">
+        <div class="col-md mb-5 mb-md-0">
+          <h2 class="fw-bold text-white mb-0">Copson Street<br><span class="text-primary">Dental Practice</span></h2>
+        </div>
+      </div>
+      <div class="border-bottom border-white-10">
+        <div class="row py-6">
+          <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-lg-0">
+            <span class="text-cap text-white">Quick Links</span>
+            <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link link-light link-light-75" href="./index.html">Home</a></li>
+              <li><a class="link link-light link-light-75" href="./the-team.html">The Team</a></li>
+              <li><a class="link link-light link-light-75" href="./gallery.html">Gallery</a></li>
+              <li><a class="link link-light link-light-75" href="./contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-lg-0">
+            <span class="text-cap text-white">Treatments</span>
+            <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link link-light link-light-75" href="./dental-implants.html">Dental Implants</a></li>
+              <li><a class="link link-light link-light-75" href="./teeth-whitening.html">Teeth Whitening</a></li>
+              <li><a class="link link-light link-light-75" href="./stain-removal.html">Stain Removal</a></li>
+              <li><a class="link link-light link-light-75" href="./treatments.html">Price List</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-sm-0">
+            <span class="text-cap text-white">Contact</span>
+            <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-geo-alt-fill me-2 text-primary"></i> Copson Street Dental Practice, 2A Copson Street, Withington, Manchester, M20 3HE</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-telephone-fill me-2 text-primary"></i> 0161 4349129</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-envelope-fill me-2 text-primary"></i> info@copsondental.co.uk </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Global Compulsory  -->
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+  <!-- AOS (Animate on Scroll) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- JS Unify -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF NAVBAR
+      // =======================================================
+      new HSHeader('#header').init()
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      const megaMenu = new HSMegaMenu('.js-mega-menu', {
+        desktop: {
+          position: 'left'
+        }
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+      
+      // INITIALIZATION OF AOS (ANIMATE ON SCROLL)
+      // =======================================================
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+        once: true,    // whether animation should happen only once - while scrolling down
+      });
+    })()
+  </script>
+</body>
+</html>
