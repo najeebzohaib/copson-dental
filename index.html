@@ -49,8 +49,8 @@
     
     /* Header floating on top of dark hero */
     header#header {
-        background-color: var(--bs-dark) !important; /* Match hero color */
-        box-shadow: none; /* Seamless look */
+        background-color: var(--bs-dark) !important; 
+        box-shadow: none; 
     }
     .navbar-brand, .nav-link { color: white !important; }
     .nav-link:hover { color: var(--bs-primary) !important; }
@@ -62,14 +62,23 @@
 
     /* Footer */
     footer.bg-dark { background-color: var(--bs-dark) !important; }
-         /* Navbar Tweaks for Space (Fixes alignment issue) */
+
+    /* Soft Backgrounds */
+    .alert-soft-info {
+      background-color: rgba(0, 157, 166, 0.1);
+      color: var(--bs-primary);
+      border-color: transparent;
+    }
+    .bg-soft-primary {
+        background-color: rgba(0, 157, 166, 0.05) !important;
+    }
+
+    /* Navbar Tweaks for Space */
     .navbar-nav .nav-link {
         font-size: 0.85rem !important;
         padding-left: 0.5rem !important;
         padding-right: 0.5rem !important;
     }
-    
-
   </style>
 </head>
 
@@ -79,23 +88,25 @@
           data-hs-header-options='{ "fixMoment": 0, "fixEffect": "slide" }'>
     <div class="container">
       <nav class="js-mega-menu navbar-nav-wrap">
+        <!-- Default Logo -->
         <a class="navbar-brand" href="./index.html" aria-label="Copson Street Dental Practice">
-          <!-- REMOVED STYLE FILTER: Original Logo Colors Restored -->
           <img class="navbar-brand-logo" src="./assets/img/copson-logo.png" alt="Copson Street Dental Logo">
         </a>
+        <!-- End Default Logo -->
+
+        <!-- Toggler -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-default"><i class="bi-list"></i></span>
           <span class="navbar-toggler-toggled"><i class="bi-x"></i></span>
         </button>
 
-             <!-- Collapse -->
+        <!-- Collapse -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <div class="navbar-absolute-top-scroller">
             <!-- Navigation Menu -->
             <ul class="navbar-nav nav-pills ms-auto">
               <li class="nav-item"><a class="nav-link active" href="./index.html"  aria-current="page">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="./the-team.html">The Team</a></li>
-             
               <li class="nav-item"><a class="nav-link" href="./treatments.html">Treatments</a></li>
               <li class="nav-item"><a class="nav-link" href="./dental-implants.html" >Dental Implants</a></li>
               <li class="nav-item"><a class="nav-link" href="./teeth-whitening.html">Teeth Whitening</a></li>
@@ -108,7 +119,6 @@
           </div>
         </div>
         <!-- End Collapse -->
-
       </nav>
     </div>
   </header>
@@ -117,11 +127,12 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero -->
+    <!-- Reduced bottom spacing from content-space-b-2 to content-space-b-1 -->
     <div class="overflow-hidden hero-section-dark">
-      <div class="container content-space-t-3 content-space-b-2">
+      <div class="container content-space-t-3 content-space-b-1">
         <div class="row justify-content-lg-between align-items-md-center">
           
-          <!-- Text Column: Kept at col-lg-5 -->
+          <!-- Text Column -->
           <div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
             <h1 class="display-4 mb-5 text-white" data-aos="fade-up">Welcome to <span class="text-primary">Copson Street Dental</span></h1>
             <span class="text-cap text-primary fw-bold mb-2" data-aos="fade-up" data-aos-delay="100">Dentist in Withington, Manchester</span>
@@ -133,7 +144,7 @@
             </div>
           </div>
 
-          <!-- Image Column: Increased from col-lg-5 to col-lg-6 -->
+          <!-- Image Column -->
           <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-in" data-aos-duration="1000">
             <div class="row gx-3 me-lg-n10">
               <div class="col-3 offset-1 align-self-end mb-3">
@@ -145,10 +156,9 @@
               <div class="col-6">
                 <img class="img-fluid rounded-3 shadow-lg" src="./assets/img/dental/homepage2.png" alt="Friendly Dentist">
               </div>
-			  <div class="col-5">
+              <div class="col-5">
                 <img class="img-fluid" src="./assets/img/copson-logo-img.png" alt="Decorative Graphic">
               </div>
-			  
             </div>
           </div>
           
@@ -157,8 +167,9 @@
     </div>
     <!-- End Hero -->
 
-    <!-- Features (Kept bright white for contrast) -->
-    <div class="overflow-hidden content-space-2">
+    <!-- Features -->
+    <!-- Reduced vertical spacing from content-space-2 to content-space-1 -->
+    <div class="overflow-hidden content-space-1">
       <div class="container" data-aos="fade-up">
         <div class="bg-light rounded-3 p-4 p-sm-8 p-lg-10 mx-md-n7 mx-lg-n10">
           <div class="row align-items-lg-center">
@@ -190,11 +201,14 @@
         </div>
       </div>
     </div>
+    <!-- End Features -->
 
-    <!-- Opening Times (Same as standard) -->
+    <!-- Opening Times -->
     <div class="bg-white">
-        <div class="container content-space-2 content-space-lg-3">
-          <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7 mb-lg-10" data-aos="fade-up">
+        <!-- Reduced spacing from content-space-2 to content-space-1 -->
+        <div class="container content-space-1">
+          <!-- Reduced margin bottom from mb-lg-10 to mb-4 -->
+          <div class="w-lg-65 text-center mx-lg-auto mb-4" data-aos="fade-up">
               <h2>Opening Times</h2>
             </div>
           <div class="table-responsive-sm bg-light shadow-sm rounded-3 p-4" data-aos="fade-up" data-aos-delay="100">
@@ -221,7 +235,8 @@
     </div>
     
     <!-- Disability Access -->
-    <div class="container content-space-2 content-space-lg-3">
+    <!-- Reduced spacing from content-space-2 to content-space-1 -->
+    <div class="container content-space-1 content-space-b-2">
       <div class="container">
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-8">
@@ -236,7 +251,6 @@
 
   </main>
 
-
   <!-- ========== FOOTER ========== -->
   <footer class="bg-dark text-light">
     <div class="container">
@@ -244,60 +258,40 @@
         <div class="col-md mb-5 mb-md-0">
           <h2 class="fw-bold text-white mb-0">Copson Street<br><span class="text-primary">Dental Practice</span></h2>
         </div>
-        <!-- End Col -->
       </div>
-      <!-- End Row -->
-
-     <div class="border-bottom border-white-10">
+      <div class="border-bottom border-white-10">
         <div class="row py-6">
           <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-lg-0">
             <span class="text-cap text-white">Quick Links</span>
-
-            <!-- List -->
             <ul class="list-unstyled list-py-1 mb-0">
               <li><a class="link link-light link-light-75" href="./index.html">Home</a></li>
               <li><a class="link link-light link-light-75" href="./the-team.html">The Team</a></li>
               <li><a class="link link-light link-light-75" href="./gallery.html">Gallery</a></li>
               <li><a class="link link-light link-light-75" href="./contact-us.html">Contact Us</a></li>
             </ul>
-            <!-- End List -->
           </div>
-          <!-- End Col -->
-
           <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-lg-0">
             <span class="text-cap text-white">Treatments</span>
-
-            <!-- List -->
             <ul class="list-unstyled list-py-1 mb-0">
               <li><a class="link link-light link-light-75" href="./dental-implants.html">Dental Implants</a></li>
               <li><a class="link link-light link-light-75" href="./teeth-whitening.html">Teeth Whitening</a></li>
               <li><a class="link link-light link-light-75" href="./stain-removal.html">Stain Removal</a></li>
               <li><a class="link link-light link-light-75" href="./treatments.html">Price List</a></li>
             </ul>
-            <!-- End List -->
           </div>
-          <!-- End Col -->
-
           <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-sm-0">
             <span class="text-cap text-white">Contact</span>
-
-            <!-- List -->
-             <ul class="list-unstyled list-py-1 mb-0">
+            <ul class="list-unstyled list-py-1 mb-0">
               <li><a class="link link-light link-light-75" target="_blank" href="http://maps.google.com/?q=M20 3HE"><i class="bi-geo-alt-fill me-2 text-primary"></i> Copson Street Dental Practice, 2A Copson Street, Withington, Manchester, M20 3HE</a></li>
               <li><a class="link link-light link-light-75" href="tel:01614349129"><i class="bi-telephone-fill me-2 text-primary"></i> 0161 4349129</a></li>
             </ul>
-            <!-- End List -->
           </div>
-          <!-- End Col -->
         </div>
-        <!-- End Row -->
       </div>
-
     </div>
   </footer>
-  <!-- ========== END FOOTER ========== -->
-  
 
+  <!-- JS Global Compulsory  -->
   <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
   <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>

@@ -79,14 +79,14 @@
         <div class="col-lg-8">
            <!-- Back Button -->
            <a href="./contact-us.html" class="btn btn-ghost-secondary btn-sm mb-4"><i class="bi-arrow-left me-1"></i> Back to Options</a>
-           
+           <h4>Please fill in your details to register your interest as a private patient.</h4>
            <div class="card shadow-sm border-0" data-aos="fade-up">
              <div class="card-body p-4 p-md-5">
                
                <!-- 
                   IMPORTANT: Replace YOUR_NEW_PRIVATE_FORMSPREE_ID with the ID of your NEW Private form
                 -->
-               <form id="private-form" action="https://formspree.io/f/YOUR_NEW_PRIVATE_FORMSPREE_ID" method="POST">
+               <form id="private-form" action="https://formspree.io/f/mlgezdyv" method="POST">
                  <input type="hidden" name="type" value="Private Registration">
                  
                  <div class="row g-4">
@@ -108,58 +108,68 @@
                    <!-- Name -->
                    <div class="col-sm-4">
                      <label class="form-label">First Name*</label>
-                     <input type="text" class="form-control" name="firstName" required>
+                     <input type="text" class="form-control" name="First-Name" required>
                    </div>
                    <div class="col-sm-4">
                      <label class="form-label">Surname*</label>
-                     <input type="text" class="form-control" name="surname" required>
+                     <input type="text" class="form-control" name="Surname" required>
                    </div>
 
                    <!-- DOB -->
                    <div class="col-sm-6">
                      <label class="form-label">Date of Birth (DD/MM/YYYY)*</label>
-                     <input type="text" class="form-control" name="dob" placeholder="e.g. 25/12/1990" required>
+                     <input type="text" class="form-control" name="Date-of-Birth" placeholder="e.g. 25/12/1990" required>
                    </div>
                    
                     <!-- Contact -->
                    <div class="col-sm-6">
                      <label class="form-label">Contact No*</label>
-                     <input type="tel" class="form-control" name="contactNo" required>
+                     <input type="tel" class="form-control" name="Contact-Number" required>
                    </div>
                    
                    <!-- Address -->
                    <div class="col-12">
                      <label class="form-label">Address*</label>
-                     <input type="text" class="form-control" name="address" required>
+                     <input type="text" class="form-control" name="Address" required>
                    </div>
                    <div class="col-sm-6">
                      <label class="form-label">Postcode*</label>
-                     <input type="text" class="form-control" name="postcode" required>
+                     <input type="text" class="form-control" name="Postcode" required>
                    </div>
                    <div class="col-sm-6">
                      <label class="form-label">Email*</label>
-                     <input type="email" class="form-control" name="email" required>
+                     <input type="email" class="form-control" name="Email" required>
                    </div>
 
                    <!-- GP -->
                    <div class="col-12">
                      <label class="form-label">Name of GP Surgery*</label>
-                     <input type="text" class="form-control" name="gpSurgery" required>
+                     <input type="text" class="form-control" name="GP-Surgery" required>
                    </div>
 
                    <!-- Interests -->
                    <div class="col-12 border-top pt-4 mt-4">
                      <label class="form-label fw-bold mb-3">I am interested in (select all that apply):</label>
                      <div class="row g-2">
-                       <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="interest[]" value="Implant Treatment" id="chk1"><label class="form-check-label" for="chk1">Implant Treatment</label></div></div>
-                       <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="interest[]" value="Teeth Straightening" id="chk2"><label class="form-check-label" for="chk2">Teeth Straightening</label></div></div>
-                       <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="interest[]" value="Teeth Whitening" id="chk3"><label class="form-check-label" for="chk3">Teeth Whitening</label></div></div>
-                       <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="interest[]" value="Hygienist" id="chk4"><label class="form-check-label" for="chk4">Hygienist</label></div></div>
-                       <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="interest[]" value="Composite Bonding" id="chk5"><label class="form-check-label" for="chk5">Composite Bonding</label></div></div>
+                       <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="Interest[]" value="Implant Treatment" id="chk1"><label class="form-check-label" for="chk1">Implant Treatment</label></div></div>
+                       <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="Interest[]" value="Teeth Straightening" id="chk2"><label class="form-check-label" for="chk2">Teeth Straightening</label></div></div>
+                       <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="Interest[]" value="Teeth Whitening" id="chk3"><label class="form-check-label" for="chk3">Teeth Whitening</label></div></div>
+                       <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="Interest[]" value="Hygienist" id="chk4"><label class="form-check-label" for="chk4">Hygienist</label></div></div>
+                       <div class="col-sm-6"><div class="form-check"><input class="form-check-input" type="checkbox" name="Interest[]" value="Composite Bonding" id="chk5"><label class="form-check-label" for="chk5">Composite Bonding</label></div></div>
                      </div>
                    </div>
 
-                   <div class="col-12 mt-5">
+                   <!-- Data Consent Checkbox -->
+                   <div class="col-12 mt-4">
+                     <div class="form-check">
+                       <input class="form-check-input" type="checkbox" name="dataConsent" id="privateConsent" required>
+                       <label class="form-check-label small text-muted" for="privateConsent">
+                         I hereby agree that this data will be stored and processed for the purpose of establishing contact. I am aware that I can revoke my consent at any time.*
+                       </label>
+                     </div>
+                   </div>
+
+                   <div class="col-12 mt-4">
                       <button type="submit" class="btn btn-primary btn-lg w-100">Submit Registration</button>
                    </div>
                    
@@ -203,21 +213,28 @@
           let isValid = true;
           let errorMessage = "";
 
-          // Get form elements
+          // Get form elements using updated name attributes
           const title = form.querySelector('select[name="title"]');
-          const firstName = form.querySelector('input[name="firstName"]');
-          const surname = form.querySelector('input[name="surname"]');
-          const dob = form.querySelector('input[name="dob"]');
-          const contactNo = form.querySelector('input[name="contactNo"]');
-          const email = form.querySelector('input[name="email"]');
-          const address = form.querySelector('input[name="address"]');
-          const postcode = form.querySelector('input[name="postcode"]');
-          const gpSurgery = form.querySelector('input[name="gpSurgery"]');
+          const firstName = form.querySelector('input[name="First-Name"]');
+          const surname = form.querySelector('input[name="Surname"]');
+          const dob = form.querySelector('input[name="Date-of-Birth"]');
+          const contactNo = form.querySelector('input[name="Contact-Number"]');
+          const email = form.querySelector('input[name="Email"]');
+          const address = form.querySelector('input[name="Address"]');
+          const postcode = form.querySelector('input[name="Postcode"]');
+          const gpSurgery = form.querySelector('input[name="GP-Surgery"]');
+          const consent = form.querySelector('input[name="dataConsent"]');
           
           // 1. Check Required Fields (Basic check)
           if (!title.value || !firstName.value || !surname.value || !dob.value || !contactNo.value || !email.value || !address.value || !postcode.value || !gpSurgery.value) {
               isValid = false;
               errorMessage = "Please fill in all required fields marked with *.";
+          }
+
+          // Check Consent
+          if (isValid && !consent.checked) {
+              isValid = false;
+              errorMessage = "You must agree to the data processing terms.";
           }
 
           // 2. Validate Email Format

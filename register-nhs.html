@@ -79,7 +79,7 @@
         <div class="col-lg-8">
            <!-- Back Button -->
            <a href="./contact-us.html" class="btn btn-ghost-secondary btn-sm mb-4"><i class="bi-arrow-left me-1"></i> Back to Options</a>
-           
+           <h4>Please fill in your details to register your interest as an NHS patient.</h4>
            <div class="card shadow-sm border-0" data-aos="fade-up">
              <div class="card-body p-4 p-md-5">
                
@@ -108,47 +108,47 @@
                    <!-- Name -->
                    <div class="col-sm-4">
                      <label class="form-label">First Name*</label>
-                     <input type="text" class="form-control" name="firstName" required>
+                     <input type="text" class="form-control" name="First-Name" required>
                    </div>
                    <div class="col-sm-4">
                      <label class="form-label">Surname*</label>
-                     <input type="text" class="form-control" name="surname" required>
+                     <input type="text" class="form-control" name="Surname" required>
                    </div>
 
                    <!-- DOB -->
                    <div class="col-sm-6">
                      <label class="form-label">Date of Birth (DD/MM/YYYY)*</label>
-                     <input type="text" class="form-control" name="dob" placeholder="e.g. 25/12/1990" required>
+                     <input type="text" class="form-control" name="Date-of-Birth" placeholder="e.g. 25/12/1990" required>
                    </div>
                    
                     <!-- Contact -->
                    <div class="col-sm-6">
                      <label class="form-label">Contact No*</label>
-                     <input type="tel" class="form-control" name="contactNo" required>
+                     <input type="tel" class="form-control" name="Contact-Number" required>
                    </div>
                    
                    <!-- Address -->
                    <div class="col-12">
                      <label class="form-label">Address*</label>
-                     <input type="text" class="form-control" name="address" required>
+                     <input type="text" class="form-control" name="Address" required>
                    </div>
                    <div class="col-sm-6">
                      <label class="form-label">Postcode*</label>
-                     <input type="text" class="form-control" name="postcode" required>
+                     <input type="text" class="form-control" name="Postcode" required>
                    </div>
                    <div class="col-sm-6">
                      <label class="form-label">Email*</label>
-                     <input type="email" class="form-control" name="email" required>
+                     <input type="email" class="form-control" name="Email" required>
                    </div>
 
                    <!-- Medical Details -->
                    <div class="col-12">
                      <label class="form-label">Name of GP Surgery*</label>
-                     <input type="text" class="form-control" name="gpSurgery" required>
+                     <input type="text" class="form-control" name="GP-Surgery" required>
                    </div>
                    <div class="col-12">
                      <label class="form-label">NHS Number (if known)</label>
-                     <input type="text" class="form-control" name="nhsNumber">
+                     <input type="text" class="form-control" name="NHS-Number">
                    </div>
 
                    <!-- Exemption -->
@@ -156,11 +156,11 @@
                      <label class="form-label fw-bold">Do you pay for NHS dental treatments?*</label>
                      <div class="d-flex gap-3">
                        <div class="form-check">
-                         <input class="form-check-input" type="radio" name="paysForTreatment" id="payYes" value="Yes" required>
+                         <input class="form-check-input" type="radio" name="Pays-For-Treatment" id="payYes" value="Yes" required>
                          <label class="form-check-label" for="payYes">Yes</label>
                        </div>
                        <div class="form-check">
-                         <input class="form-check-input" type="radio" name="paysForTreatment" id="payNo" value="No" required>
+                         <input class="form-check-input" type="radio" name="Pays-For-Treatment" id="payNo" value="No" required>
                          <label class="form-check-label" for="payNo">No</label>
                        </div>
                      </div>
@@ -168,8 +168,18 @@
 
                    <div class="col-12" id="exemptionField" style="display:none;">
                      <label class="form-label">If No, which benefit or exemption do you receive?</label>
-                     <input type="text" class="form-control" name="exemptionReason">
+                     <input type="text" class="form-control" name="Exemption-Reason">
                      <div class="form-text text-primary"><i class="bi-info-circle me-1"></i> You will need to show evidence of exemption at your appointment.</div>
+                   </div>
+
+                    <!-- Data Consent Checkbox -->
+                   <div class="col-12 mt-4">
+                     <div class="form-check">
+                       <input class="form-check-input" type="checkbox" name="dataConsent" id="Data-Processing-Consent" required>
+                       <label class="form-check-label small text-muted" for="Data-Processing-Consent">
+                         I hereby agree that this data will be stored and processed for the purpose of establishing contact. I am aware that I can revoke my consent at any time.*
+                       </label>
+                     </div>
                    </div>
 
                    <div class="col-12 mt-5">
