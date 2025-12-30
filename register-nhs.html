@@ -93,7 +93,7 @@
                    <!-- Title -->
                    <div class="col-sm-4">
                      <label class="form-label">Title*</label>
-                     <select class="form-select" name="title" required>
+                     <select class="form-select" name="Title" required>
                        <option value="">Select...</option>
                        <option value="Dr">Dr</option>
                        <option value="Mr">Mr</option>
@@ -118,7 +118,7 @@
                    <!-- DOB -->
                    <div class="col-sm-6">
                      <label class="form-label">Date of Birth (DD/MM/YYYY)*</label>
-                     <input type="text" class="form-control" name="Date-of-Birth" placeholder="e.g. 25/12/1990" required>
+                     <input type="text" class="form-control" name="Date-Of-Birth" placeholder="e.g. 25/12/1990" required>
                    </div>
                    
                     <!-- Contact -->
@@ -245,17 +245,17 @@
           let errorMessage = "";
 
           // Get form elements
-          const title = form.querySelector('select[name="title"]');
-          const firstName = form.querySelector('input[name="firstName"]');
-          const surname = form.querySelector('input[name="surname"]');
-          const dob = form.querySelector('input[name="dob"]');
-          const contactNo = form.querySelector('input[name="contactNo"]');
-          const email = form.querySelector('input[name="email"]');
-          const address = form.querySelector('input[name="address"]');
-          const postcode = form.querySelector('input[name="postcode"]');
-          const gpSurgery = form.querySelector('input[name="gpSurgery"]');
-          const nhsNumber = form.querySelector('input[name="nhsNumber"]');
-          const paysForTreatment = form.querySelector('input[name="paysForTreatment"]:checked');
+          const title = form.querySelector('select[name="Title"]');
+          const firstName = form.querySelector('input[name="First-Name"]');
+          const surname = form.querySelector('input[name="Surname"]');
+          const dob = form.querySelector('input[name="Date-Of-Birth"]');
+          const contactNo = form.querySelector('input[name="Contact-Number"]');
+          const email = form.querySelector('input[name="Email"]');
+          const address = form.querySelector('input[name="Address"]');
+          const postcode = form.querySelector('input[name="Postcode"]');
+          const gpSurgery = form.querySelector('input[name="GP-Surgery"]');
+          const nhsNumber = form.querySelector('input[name="NHS-Number"]');
+          const paysForTreatment = form.querySelector('input[name="Pays-For-Treatment"]:checked');
 
           // Reset previous error styles (optional, simple reset)
           // Ideally you'd toggle classes, but for simplicity we rely on required attribute and custom checks

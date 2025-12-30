@@ -93,7 +93,7 @@
                    <!-- Title -->
                    <div class="col-sm-4">
                      <label class="form-label">Title*</label>
-                     <select class="form-select" name="title" required>
+                     <select class="form-select" name="Title" required>
                        <option value="">Select...</option>
                        <option value="Dr">Dr</option>
                        <option value="Mr">Mr</option>
@@ -118,7 +118,7 @@
                    <!-- DOB -->
                    <div class="col-sm-6">
                      <label class="form-label">Date of Birth (DD/MM/YYYY)*</label>
-                     <input type="text" class="form-control" name="Date-of-Birth" placeholder="e.g. 25/12/1990" required>
+                     <input type="text" class="form-control" name="Date-Of-Birth" placeholder="e.g. 25/12/1990" required>
                    </div>
                    
                     <!-- Contact -->
@@ -214,10 +214,10 @@
           let errorMessage = "";
 
           // Get form elements using updated name attributes
-          const title = form.querySelector('select[name="title"]');
+          const title = form.querySelector('select[name="Title"]');
           const firstName = form.querySelector('input[name="First-Name"]');
           const surname = form.querySelector('input[name="Surname"]');
-          const dob = form.querySelector('input[name="Date-of-Birth"]');
+          const dob = form.querySelector('input[name="Date-Of-Birth"]');
           const contactNo = form.querySelector('input[name="Contact-Number"]');
           const email = form.querySelector('input[name="Email"]');
           const address = form.querySelector('input[name="Address"]');
