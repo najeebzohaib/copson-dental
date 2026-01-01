@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Dental Care Plan | Copson Street Dental Practice</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="./assets/vendor/swiper/swiper-bundle.min.css">
+
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- CUSTOM BRANDING CSS - DARK HERO THEME -->
+  <style>
+    :root {
+      --bs-primary: #009da6; 
+      --bs-dark: #1a2530; 
+    }
+
+    /* Brand Colors */
+    .text-primary { color: var(--bs-primary) !important; }
+    .bg-primary { background-color: var(--bs-primary) !important; }
+    .btn-primary { background-color: var(--bs-primary); border-color: var(--bs-primary); }
+    .btn-primary:hover { background-color: #00858d; border-color: #00858d; }
+    
+    /* Dark Hero Specifics */
+    .hero-section-dark {
+        background-color: var(--bs-dark);
+        color: white !important;
+    }
+    .hero-section-dark .text-body {
+        color: #e0e0e0 !important;
+    }
+    .hero-section-dark .text-primary {
+        color: #00d2dd !important; /* Lighter teal for better contrast on dark bg */
+    }
+    
+    /* Header floating on top of dark hero */
+    header#header {
+        background-color: var(--bs-dark) !important; 
+        box-shadow: none; 
+    }
+    .navbar-brand, .nav-link { color: white !important; }
+    .nav-link:hover { color: var(--bs-primary) !important; }
+    .nav-link.active { color: var(--bs-primary) !important; }
+
+    /* Navbar Toggler White */
+    .navbar-toggler { border-color: rgba(255,255,255,0.5); }
+    .navbar-toggler-default i, .navbar-toggler-toggled i { color: white !important; }
+
+    /* Footer */
+    footer.bg-dark { background-color: var(--bs-dark) !important; }
+
+    /* Soft Backgrounds */
+    .alert-soft-info {
+      background-color: rgba(0, 157, 166, 0.1);
+      color: var(--bs-primary);
+      border-color: transparent;
+    }
+    .bg-soft-primary {
+        background-color: rgba(0, 157, 166, 0.05) !important;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand-lg navbar-dark navbar-end navbar-absolute-top navbar-show-hide"
+          data-hs-header-options='{ "fixMoment": 0, "fixEffect": "slide" }'>
+    <div class="container">
+      <nav class="js-mega-menu navbar-nav-wrap">
+        <!-- Default Logo -->
+        <a class="navbar-brand" href="./index.html" aria-label="Copson Street Dental Practice">
+          <img class="navbar-brand-logo" src="./assets/img/copson-logo.png" alt="Copson Street Dental Logo">
+        </a>
+        <!-- End Default Logo -->
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </button>
+        <!-- End Toggler -->
+      
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="navbar-absolute-top-scroller">
+            <!-- Navigation Menu -->
+            <ul class="navbar-nav nav-pills ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./the-team.html">The Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./treatments.html">Treatments</a>
+              </li>
+              
+              <!-- New Dropdown for Cosmetic Services -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="cosmeticDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cosmetic Dentistry
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="cosmeticDropdown">
+                  <li><a class="dropdown-item" href="./dental-implants.html">Dental Implants</a></li>
+                  <li><a class="dropdown-item" href="./teeth-straightening.html">Teeth Straightening</a></li>
+                  <li><a class="dropdown-item" href="./teeth-whitening.html">Teeth Whitening</a></li>
+                  <li><a class="dropdown-item" href="./stain-removal.html">Stain Removal</a></li>
+                </ul>
+              </li>
+              <!-- End Dropdown -->
+
+              <li class="nav-item">
+                <a class="nav-link active" href="./dental-care-plan.html" aria-current="page">Dental Care Plan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+            <!-- End Navigation Menu -->
+          </div>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    
+    <!-- Hero -->
+    <div class="overflow-hidden hero-section-dark">
+      <div class="container content-space-t-3 content-space-b-2">
+        <div class="row justify-content-lg-between align-items-md-center">
+          <div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
+            <h1 class="display-4 mb-3 text-white" data-aos="fade-up">Join Our <span class="text-primary">Dental Care Plan</span></h1>
+            <p class="fs-3 text-body" data-aos="fade-up" data-aos-delay="100">The best way to maintain healthy teeth and gums for life.</p>
+            <div class="mt-5" data-aos="fade-up" data-aos-delay="200">
+              <a class="btn btn-primary btn-lg shadow-lg px-5 py-3 fs-4" href="https://signup.practiceplan.co.uk/Patient/Home/CUGMN9" target="_blank">Sign Up Online</a>
+           
+            </div>
+          </div>
+          <!-- End Col -->
+         <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-in" data-aos-duration="1000">
+            <img class="img-fluid rounded-3 shadow-lg" src="./assets/img/dental/dental-care-plan.png" alt="Dental Care Plan Illustration">
+          </div>
+
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- Intro Section -->
+    <div class="container content-space-2">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+                <h2 class="mb-4">Why Join?</h2>
+                <p class="lead text-dark">Our Dental Care Plan encourages regular attendance, enabling us to spot problems before they arise and results in helping you maintain healthy teeth and gums for life.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 Benefits Grid -->
+    <div class="bg-soft-primary">
+        <div class="container content-space-2">
+            <div class="w-lg-65 text-center mx-lg-auto mb-5 mb-sm-7" data-aos="fade-up">
+                <h2>The 5 Big Benefits of Joining</h2>
+            </div>
+            
+            <!-- Updated Grid Classes: row-cols-md-3 allows 3 items per row, justify-content-center centers the remaining 2 -->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
+                <!-- Item 1 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <i class="fa-solid fa-tooth fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Reduces Risk</h5>
+                            <p class="card-text">Reduces the risk of tooth decay and gum disease with regular attendance.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="150">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <i class="fa-solid fa-globe fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Worldwide Assistance</h5>
+                            <p class="card-text">Eligibility to request assistance from the Worldwide Dental Emergency Assistance Scheme*.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <i class="fa-solid fa-tags fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Exclusive Discounts</h5>
+                            <p class="card-text">20% discount on routine treatment and whitening, 10% discount on cosmetic treatments.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="250">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <i class="fa-solid fa-calendar-days fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Spreads the Cost</h5>
+                            <p class="card-text">Spreads the cost of your routine dental care through a convenient monthly Direct Debit.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="col" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <i class="fa-solid fa-piggy-bank fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Saves Money</h5>
+                            <p class="card-text">Saves you money compared to private pay-as-you-go fees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- What's Included Table -->
+    <div class="container content-space-2 content-space-lg-3">
+        <div class="row justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up">
+                <div class="card shadow-lg border-0 overflow-hidden">
+                    <div class="card-header bg-dark text-white text-center py-4">
+                        <h3 class="card-title text-white mb-0">What's Included in Your Membership?</h3>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-striped mb-0">
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3 border-bottom">Number of dental health examinations per year***</th>
+                                    <td class="text-end px-4 py-3 fw-bold border-bottom">2</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="px-4 py-3">Number of hygiene appointments per year***</th>
+                                    <td class="text-end px-4 py-3 fw-bold">2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- New Footer for Monthly Cost - Solves visibility issue -->
+                    <div class="card-footer bg-primary text-white text-center py-4 border-0">
+                        <h4 class="text-white mb-1">Monthly Cost****</h4>
+                        <div class="display-4 fw-bold">£15.76</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- How appointments help -->
+        <div class="row justify-content-center mt-7">
+            <div class="col-lg-8">
+                 <div class="row">
+                     <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-right">
+                         <h4 class="mb-4">Dental Examinations Provide:</h4>
+                         <ul class="list-unstyled">
+                             <li class="d-flex align-items-start mb-3">
+                                 <div class="flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-circle-check text-primary"></i>
+                                 </div>
+                                 <div class="flex-grow-1 ms-3">
+                                     <span class="text-body">Clinical examination to catch developing problems early.</span>
+                                 </div>
+                             </li>
+                             <li class="d-flex align-items-start mb-3">
+                                 <div class="flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-circle-check text-primary"></i>
+                                 </div>
+                                 <div class="flex-grow-1 ms-3">
+                                     <span class="text-body">Checking for signs of oral cancer for early detection.</span>
+                                 </div>
+                             </li>
+                             <li class="d-flex align-items-start mb-3">
+                                 <div class="flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-circle-check text-primary"></i>
+                                 </div>
+                                 <div class="flex-grow-1 ms-3">
+                                     <span class="text-body">X-rays where clinically necessary for an in-depth examination of your oral health.</span>
+                                 </div>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="col-md-6" data-aos="fade-left">
+                         <h4 class="mb-4">Hygiene Appointments Provide:</h4>
+                         <ul class="list-unstyled">
+                             <li class="d-flex align-items-start mb-3">
+                                 <div class="flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-circle-check text-primary"></i>
+                                 </div>
+                                 <div class="flex-grow-1 ms-3">
+                                     <span class="text-body">Professional removal of harmful hard plaque.</span>
+                                 </div>
+                             </li>
+                             <li class="d-flex align-items-start mb-3">
+                                 <div class="flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-circle-check text-primary"></i>
+                                 </div>
+                                 <div class="flex-grow-1 ms-3">
+                                     <span class="text-body">Advice and techniques - we work with you to prevent tooth decay and gum disease.</span>
+                                 </div>
+                             </li>
+                             <li class="d-flex align-items-start mb-3">
+                                 <div class="flex-shrink-0 mt-1">
+                                    <i class="fa-solid fa-circle-check text-primary"></i>
+                                 </div>
+                                 <div class="flex-grow-1 ms-3">
+                                     <span class="text-body">Fresher breath and a brighter smile for improved self-esteem.</span>
+                                 </div>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CTA -->
+    <div class="bg-light">
+        <div class="container content-space-2 text-center">
+            <div class="w-lg-75 mx-auto" data-aos="fade-up">
+                <h3 class="mb-4">Complete Package for Your Oral Health</h3>
+                <p class="lead mb-5">We believe this is the complete package to maintain your oral health. We recommend joining to help reduce the risk of expensive restorative treatment in the future.</p>
+                 <a class="btn btn-primary btn-lg shadow-lg px-5 py-3 fs-4" href="https://signup.practiceplan.co.uk/Patient/Home/CUGMN9" target="_blank">Sign Up Online</a>
+           
+                 <p class="mt-3 text-muted small">Or speak to any member of the team for more details.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Terms -->
+    <div class="container content-space-1">
+        <div class="text-muted small" style="font-size: 0.75rem;">
+            <p>*The Worldwide Dental Emergency Assistance Scheme is a scheme established to offer support and assistance to dental plan patients who request treatment following a dental trauma and/or dental emergency or oral cancer. The Scheme responds to requests for assistance on a wholly discretionary basis. This means that, whilst the Scheme aims to provide benefits in most cases, it has no obligation to provide any benefit unless it first decides (in its sole and absolute discretion) that it should provide a benefit. There are some circumstances in which the Scheme is not designed to help and these are explained in more detail in the Scheme Handbook. Each request will be looked at individually to assess the request for benefit. Certain restrictions and limitations may apply in the event that the request is accepted and it is possible that the Scheme will decide to provide no benefit.</p>
+            <p>**Exclusions apply.</p>
+            <p>*** The provision of routine examinations and hygiene visits is subject to receipt of the required consecutive monthly payments.</p>
+            <p>**** An initial administration fee of £9.50 will be collected with your first payment only.</p>
+        </div>
+    </div>
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center pt-8 pb-4">
+        <div class="col-md mb-5 mb-md-0">
+          <h2 class="fw-bold text-white mb-0">Copson Street<br><span class="text-primary">Dental Practice</span></h2>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+      <div class="border-bottom border-white-10">
+        <div class="row py-6">
+          <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-lg-0">
+            <span class="text-cap text-white">Quick Links</span>
+
+            <!-- List -->
+            <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link link-light link-light-75" href="./index.html">Home</a></li>
+              <li><a class="link link-light link-light-75" href="./the-team.html">The Team</a></li>
+              <li><a class="link link-light link-light-75" href="./gallery.html">Gallery</a></li>
+              <li><a class="link link-light link-light-75" href="./contact-us.html">Contact Us</a></li>
+            </ul>
+            <!-- End List -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-lg-0">
+            <span class="text-cap text-white">Treatments</span>
+
+            <!-- List -->
+            <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link link-light link-light-75" href="./dental-implants.html">Dental Implants</a></li>
+              <li><a class="link link-light link-light-75" href="./teeth-whitening.html">Teeth Whitening</a></li>
+              <li><a class="link link-light link-light-75" href="./stain-removal.html">Stain Removal</a></li>
+              <li><a class="link link-light link-light-75" href="./treatments.html">Price List</a></li>
+            </ul>
+            <!-- End List -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-sm-0">
+            <span class="text-cap text-white">Contact</span>
+
+            <!-- List -->
+            <ul class="list-unstyled list-py-1 mb-0">
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-geo-alt-fill me-2"></i> Copson Street Dental Practice, 2A Copson Street, Withington, Manchester, M20 3HE</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-telephone-fill me-2"></i> 0161 4349129</a></li>
+              <li><a class="link link-light link-light-75" href="#"><i class="bi-envelope-fill me-2"></i> info@copsondental.co.uk </a></li>
+            </ul>
+            <!-- End List -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;"
+     data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+  <!-- AOS (Animate on Scroll) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- JS Unify -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF NAVBAR
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      const megaMenu = new HSMegaMenu('.js-mega-menu', {
+        desktop: {
+          position: 'left'
+        }
+      })
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF SWIPER
+      // =======================================================
+      var swiper = new Swiper('.js-swiper-testimonials',{
+        navigation: {
+          nextEl: '.js-swiper-testimonials-button-next',
+          prevEl: '.js-swiper-testimonials-button-prev',
+        },
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+          580: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 3
+          },
+        },
+        on: {
+          'imagesReady': function (swiper) {
+            const preloader = swiper.el.querySelector('.js-swiper-preloader')
+            preloader.parentNode.removeChild(preloader)
+          }
+        }
+      });
+      
+      // INITIALIZATION OF AOS (ANIMATE ON SCROLL)
+      // =======================================================
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+        once: true,    // whether animation should happen only once - while scrolling down
+      });
+      
+      // INITIALIZATION OF GLIGHTBOX
+      // =======================================================
+      const lightbox = GLightbox({
+        selector: '.gallery-lightbox', 
+        touchNavigation: true,
+        loop: true
+      });
+
+    })()
+  </script>
+</body>
+</html>
